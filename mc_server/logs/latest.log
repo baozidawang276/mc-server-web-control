@@ -1,0 +1,62 @@
+[20:18:23] [main/INFO]: Loading Minecraft 1.21.6 with Fabric Loader 0.17.2
+[20:18:23] [main/INFO]: Loading 8 mods:
+	- fabricloader 0.17.2
+	   \-- mixinextras 0.5.0
+	- java 21
+	- minecraft 1.21.6
+	- servux 0.7.3
+	   |-- fabric-api-base 0.5.0+cd8c0daa2c
+	   |-- fabric-networking-api-v1 5.0.2+946bf4c32c
+	   \-- fabric-permissions-api-v0 0.4.1
+[20:18:24] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/F:/1/mc_web_panel/mc_server/libraries/net/fabricmc/sponge-mixin/0.16.3+mixin.0.8.7/sponge-mixin-0.16.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[20:18:24] [main/INFO]: Compatibility level set to JAVA_21
+[20:18:25] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[20:18:57] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:19:08] [main/INFO]: Loaded 1407 recipes
+[20:19:08] [main/INFO]: Loaded 1520 advancements
+[20:19:09] [Server thread/INFO]: Starting minecraft server version 1.21.6
+[20:19:09] [Server thread/INFO]: Loading properties
+[20:19:09] [Server thread/INFO]: Default game type: SURVIVAL
+[20:19:09] [Server thread/INFO]: Generating keypair
+[20:19:09] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:19:10] [Server thread/INFO]: Using default channel type
+[20:19:10] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:19:10] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:19:10] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:19:10] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:19:10] [Server thread/INFO]: Preparing level "world"
+[20:19:12] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[20:19:22] [Server thread/INFO]: Time elapsed: 10516 ms
+[20:19:22] [Server thread/INFO]: Done (12.211s)! For help, type "help"
+[20:20:12] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6490ms or 129 ticks behind
+[20:20:33] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6744ms or 134 ticks behind
+[20:20:36] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[20:20:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2142ms or 42 ticks behind
+[20:21:36] [Server thread/INFO]: baozidawang_[/127.0.0.1:60207] logged in with entity id 66 at (-24.619260208502396, 60.0, -119.0160843374515)
+[20:21:37] [Server thread/INFO]: baozidawang_ joined the game
+[20:21:38] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2144ms or 42 ticks behind
+[20:22:10] [Server thread/INFO]: baozidawang_ lost connection: Disconnected
+[20:22:10] [Server thread/INFO]: baozidawang_ left the game
+[20:22:12] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 19039ms or 380 ticks behind
+[20:23:03] [Server thread/INFO]: Server empty for 60 seconds, pausing
