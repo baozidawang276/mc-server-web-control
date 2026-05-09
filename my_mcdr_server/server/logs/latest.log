@@ -1,0 +1,48 @@
+[00:36:19] [main/INFO]: Loading Minecraft 1.21.6 with Fabric Loader 0.17.2
+[00:36:19] [main/INFO]: Loading 8 mods:
+	- fabricloader 0.17.2
+	   \-- mixinextras 0.5.0
+	- java 21
+	- minecraft 1.21.6
+	- servux 0.7.3
+	   |-- fabric-api-base 0.5.0+cd8c0daa2c
+	   |-- fabric-networking-api-v1 5.0.2+946bf4c32c
+	   \-- fabric-permissions-api-v0 0.4.1
+[00:36:20] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/F:/1/mc_web_panel/my_mcdr_server/server/libraries/net/fabricmc/sponge-mixin/0.16.3+mixin.0.8.7/sponge-mixin-0.16.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[00:36:20] [main/INFO]: Compatibility level set to JAVA_21
+[00:36:20] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[00:36:40] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:36:46] [main/INFO]: Loaded 1407 recipes
+[00:36:46] [main/INFO]: Loaded 1520 advancements
+[00:36:47] [Server thread/INFO]: Starting minecraft server version 1.21.6
+[00:36:47] [Server thread/INFO]: Loading properties
+[00:36:47] [Server thread/INFO]: Default game type: SURVIVAL
+[00:36:47] [Server thread/INFO]: Generating keypair
+[00:36:47] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:36:47] [Server thread/INFO]: Using default channel type
+[00:36:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[00:36:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[00:36:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[00:36:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[00:36:48] [Server thread/INFO]: Preparing level "world"
+[00:36:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:36:55] [Server thread/INFO]: Time elapsed: 6727 ms
+[00:36:55] [Server thread/INFO]: Done (7.789s)! For help, type "help"
+[00:36:56] [Server thread/INFO]: Stopping the server
+[00:36:56] [Server thread/INFO]: Stopping server
+[00:36:56] [Server thread/INFO]: Saving players
+[00:36:56] [Server thread/INFO]: Saving worlds
+[00:36:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld

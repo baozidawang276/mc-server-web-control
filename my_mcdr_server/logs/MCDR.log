@@ -1,0 +1,189 @@
+[MCDR] [2026-05-10 00:36:14.925] [MainThread/INFO] [mcdr_server.py:606(__on_mcdr_start)]: MCDReforged 2.15.7 正在启动
+[MCDR] [2026-05-10 00:36:14.940] [MainThread/INFO] [python_plugin.py:36(load)]: MCDReforged 正于 Python 3.13.5 环境中运行
+[MCDR] [2026-05-10 00:36:14.943] [TaskExecutor/INFO] [plugin_manager.py:719(refresh_all_plugins_action)]: 刷新所有插件中
+[MCDR] [2026-05-10 00:36:14.946] [TaskExecutor/INFO] [mcdr_server.py:316(load_plugins)]: 没有插件变更; 已加载插件数: §72§r
+[MCDR] [2026-05-10 00:36:14.955] [MainThread/INFO] [mcdr_server.py:434(start_server)]: 正在启动服务端，启动参数为 'java -Xms1G -Xmx2G -jar fabric-server-launch.jar nogui'
+[MCDR] [2026-05-10 00:36:14.984] [ConsoleHandler/ERROR] [console_handler.py:316(start_kits)]: Failed to enable advanced console, switch back to basic input
+Traceback (most recent call last):
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\executor\console_handler.py"[0m, line [35m313[0m, in [35mstart_kits[0m
+    self.prompt_session = [31mMCDRPromptSession[0m[1;31m(self.__console_handler)[0m
+                          [31m~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\executor\console_handler.py"[0m, line [35m167[0m, in [35m__init__[0m
+    [31msuper().__init__[0m[1;31m([0m
+    [31m~~~~~~~~~~~~~~~~[0m[1;31m^[0m
+    	[1;31mcomplete_in_thread=True,  # this will do the ThreadedCompleter wrapping automatically[0m
+     [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+    ...<2 lines>...
+    	[1;31mreserve_space_for_menu=3[0m
+     [1;31m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+    [1;31m)[0m
+    [1;31m^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\prompt_toolkit\shortcuts\prompt.py"[0m, line [35m483[0m, in [35m__init__[0m
+    self.app = [31mself._create_application[0m[1;31m(editing_mode, erase_when_done)[0m
+               [31m~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\prompt_toolkit\shortcuts\prompt.py"[0m, line [35m744[0m, in [35m_create_application[0m
+    application: Application[_T] = [31mApplication[0m[1;31m([0m
+                                   [31m~~~~~~~~~~~[0m[1;31m^[0m
+        [1;31mlayout=self.layout,[0m
+        [1;31m^^^^^^^^^^^^^^^^^^^[0m
+    ...<36 lines>...
+        [1;31moutput=self._output,[0m
+        [1;31m^^^^^^^^^^^^^^^^^^^^[0m
+    [1;31m)[0m
+    [1;31m^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\prompt_toolkit\application\application.py"[0m, line [35m267[0m, in [35m__init__[0m
+    self.output = output or [1;31msession.output[0m
+                            [1;31m^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\prompt_toolkit\application\current.py"[0m, line [35m67[0m, in [35moutput[0m
+    self._output = [31mcreate_output[0m[1;31m()[0m
+                   [31m~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\prompt_toolkit\output\defaults.py"[0m, line [35m91[0m, in [35mcreate_output[0m
+    return Win32Output(stdout, default_color_depth=color_depth_from_env)
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\prompt_toolkit\output\win32.py"[0m, line [35m115[0m, in [35m__init__[0m
+    info = self.get_win32_screen_buffer_info()
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\prompt_toolkit\output\win32.py"[0m, line [35m219[0m, in [35mget_win32_screen_buffer_info[0m
+    raise NoConsoleScreenBufferError
+[1;35mprompt_toolkit.output.win32.NoConsoleScreenBufferError[0m: [35mNo Windows console found. Are you running cmd.exe?[0m
+[MCDR] [2026-05-10 00:36:15.042] [MainThread/INFO] [mcdr_server.py:500(__on_server_start_post)]: 服务端正在以 PID 8084 运行中
+[MCDR] [2026-05-10 00:36:21.227] [CheckUpdate/INFO] [update_helper.py:76(__check_update)]: MCDR 已为最新版
+[MCDR] [2026-05-10 00:36:56.821] [SignalHandler/WARNING] [mcdr_server.py:640(do_callback)]: Received signal SIGINT (2), interrupting MCDR
+[MCDR] [2026-05-10 00:36:56.822] [SignalHandler/INFO] [mcdr_server.py:461(interrupt)]: 正在终止 MCDR。再次执行以强制杀死服务端
+[MCDR] [2026-05-10 00:36:56.961] [SignalHandler/WARNING] [mcdr_server.py:640(do_callback)]: Received signal SIGINT (2), interrupting MCDR
+[MCDR] [2026-05-10 00:36:56.964] [MainThread/INFO] [mcdr_server.py:656(__on_mcdr_stop)]: 正在关闭 MCDR
+[MCDR] [2026-05-10 00:36:56.964] [SignalHandler/INFO] [mcdr_server.py:461(interrupt)]: 正在终止 MCDR 并杀死服务端
+[MCDR] [2026-05-10 00:36:56.966] [SignalHandler/INFO] [mcdr_server.py:449(__kill_server)]: 正在杀死服务端进程组
+[MCDR] [2026-05-10 00:36:56.984] [SignalHandler/INFO] [server_process_manager.py:286(kill_process_tree)]: 进程 java.exe (pid 17880) 已杀死
+[MCDR] [2026-05-10 00:36:56.986] [SignalHandler/INFO] [server_process_manager.py:286(kill_process_tree)]: 进程 cmd.exe (pid 8084) 已杀死
+[MCDR] [2026-05-10 00:36:57.026] [TaskExecutor/ERROR] [task_executor_sync.py:118(tick)]: 运行 TaskExecutor 时出错
+Traceback (most recent call last):
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\executor\task_executor_sync.py"[0m, line [35m116[0m, in [35mtick[0m
+    task_result = task.func()
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\info_reactor\info_reactor_manager.py"[0m, line [35m95[0m, in [35mprocess_info_wrapper[0m
+    [31msend_to_server[0m[1;31m()[0m
+    [31m~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\info_reactor\info_reactor_manager.py"[0m, line [35m88[0m, in [35msend_to_server[0m
+    [31mself.mcdr_server.send[0m[1;31m(info.content)[0m
+    [31m~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\mcdr_server.py"[0m, line [35m539[0m, in [35msend[0m
+    [31mself.process_manager.write[0m[1;31m(encoded_text)[0m
+    [31m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\process\server_process_manager.py"[0m, line [35m231[0m, in [35mwrite[0m
+    [31masyncio.run_coroutine_threadsafe(do_write(), cp.loop).result[0m[1;31m()[0m
+    [31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py"[0m, line [35m456[0m, in [35mresult[0m
+    return [31mself.__get_result[0m[1;31m()[0m
+           [31m~~~~~~~~~~~~~~~~~[0m[1;31m^^[0m
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py"[0m, line [35m401[0m, in [35m__get_result[0m
+    raise self._exception
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\site-packages\mcdreforged\process\server_process_manager.py"[0m, line [35m226[0m, in [35mdo_write[0m
+    await cp.proc.stdin.drain()
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py"[0m, line [35m386[0m, in [35mdrain[0m
+    await self._protocol._drain_helper()
+  File [35m"C:\Users\baozi\AppData\Local\Programs\Python\Python313\Lib\asyncio\streams.py"[0m, line [35m166[0m, in [35m_drain_helper[0m
+    raise ConnectionResetError('Connection lost')
+[1;35mConnectionResetError[0m: [35mConnection lost[0m
+[MCDR] [2026-05-10 00:36:57.110] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.111] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.112] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.113] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.113] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.113] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.114] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.114] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.114] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.115] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.116] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.116] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.117] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.117] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.117] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.118] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.118] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.118] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.119] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.120] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.120] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.121] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.121] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.122] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.122] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.122] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.125] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.125] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.126] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.126] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.127] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.128] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.128] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.129] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.129] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.130] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.130] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.130] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.132] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.133] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.134] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.135] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.135] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.135] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.136] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.136] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.136] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.137] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.137] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.137] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.138] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.138] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.138] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.139] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.139] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.139] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.141] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.142] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.142] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.143] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.143] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.143] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.143] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.144] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.145] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.145] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.145] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.146] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.146] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.146] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.146] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.147] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.147] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.148] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.148] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.148] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.155] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.157] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.158] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.158] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.159] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.159] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.159] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.160] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.160] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.160] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.160] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.161] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.161] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.161] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.162] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.162] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.162] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.163] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.163] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.163] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.163] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.164] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.164] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.164] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.164] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.165] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.165] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.165] [ConsoleHandler/ERROR] [task_executor_sync.py:69(submit)]: Submitting task to a dead task executor <mcdreforged.executor.task_executor_sync.SyncTaskExecutor object at 0x000001D0FFDFD400>, thread 4780
+[MCDR] [2026-05-10 00:36:57.180] [MainThread/INFO] [mcdr_server.py:691(__on_mcdr_stop)]: bye
