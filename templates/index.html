@@ -2,135 +2,160 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MC 服务器控制面板</title>
+    <title>MCDR 控制面板</title>
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: "Microsoft YaHei", sans-serif;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
         body {
-            background-color: #f5f7fa;
+            background: #f5f7fa;
             padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
         }
         h1 {
-            text-align: center;
+            margin-bottom: 20px;
             color: #333;
-            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .sidebar {
+            width: 380px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
         .card {
             background: white;
+            padding: 15px;
             border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
-        .status-text {
-            font-size: 16px;
-            margin-bottom: 15px;
-            color: #555;
+        .card h3 {
+            margin-bottom: 10px;
+            color: #444;
         }
         .btn {
-            padding: 8px 20px;
+            padding: 8px 16px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
+            margin-right: 6px;
         }
-        .btn-stop {
-            background-color: #ff4d4f;
+        .btn-green {
+            background: #52c41a;
             color: white;
         }
-        .player-list {
-            color: #555;
-            line-height: 1.6;
+        .btn-red {
+            background: #ff4d4f;
+            color: white;
         }
-        .cmd-form {
-            display: flex;
-            gap: 10px;
+        .btn-blue {
+            background: #1890ff;
+            color: white;
+        }
+        .btn-save {
+            width: 100%;
+            background: #1890ff;
+            color: white;
             margin-top: 10px;
+            padding: 10px;
+            font-size: 15px;
         }
-        .cmd-input {
-            flex: 1;
-            padding: 8px 12px;
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            font-size: 14px;
         }
-        .btn-send {
-            background-color: #4096ff;
-            color: white;
-        }
-        .log-box {
-            background-color: #1e1e1e;
-            color: #d4d4d4;
-            padding: 15px;
+        textarea {
+            width: 100%;
+            height: 420px;
+            padding: 10px;
+            border: 1px solid #ddd;
             border-radius: 4px;
-            height: 300px;
-            overflow-y: auto;
             font-family: Consolas, monospace;
             font-size: 13px;
-            line-height: 1.5;
+            resize: vertical;
+        }
+        .log-box {
+            height: 400px;
+            overflow-y: auto;
+            background: #2d2d2d;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 12px;
             white-space: pre-wrap;
-            word-break: break-all;
         }
     </style>
 </head>
 <body>
-    <h1>MC 服务器控制面板</h1>
+    <h1>MCDR 服务器控制面板</h1>
 
-    <!-- 服务器状态控制 -->
-    <div class="card">
-        <div class="status-text">当前状态: {{ status }}</div>
-        {% if running %}
+    <div class="container">
+        <!-- 左侧配置栏 -->
+        <div class="sidebar">
+            <h3>server.properties 配置</h3>
             <form method="post">
-                <button type="submit" name="action" value="stop" class="btn btn-stop">关闭服务器</button>
+                <textarea name="config_content">{{ config_content }}</textarea>
+                <button type="submit" name="action" value="save_config" class="btn btn-save">
+                    保存配置并自动重启服务器
+                </button>
             </form>
-        {% else %}
-            <form method="post">
-                <button type="submit" name="action" value="start" class="btn btn-start">启动服务器</button>
-            </form>
-        {% endif %}
-    </div>
+        </div>
 
-    <!-- 在线玩家 -->
-    <div class="card">
-        <h3>在线玩家</h3>
-        <div class="player-list">{{ player_text }}</div>
-    </div>
+        <!-- 右侧主面板 -->
+        <div class="main-content">
+            <div class="card">
+                <h3>服务器状态：{{ status }}</h3>
+                <form method="post" style="display: inline;">
+                    <button type="submit" name="action" value="start" class="btn btn-green">启动服务器</button>
+                    <button type="submit" name="action" value="stop" class="btn btn-red">停止服务器</button>
+                </form>
+            </div>
 
-    <!-- 发送指令 -->
-    <div class="card">
-        <h3>发送控制台指令</h3>
-        <form method="post" class="cmd-form">
-            <input type="text" name="cmd" class="cmd-input" placeholder="输入服务器指令...">
-            <button type="submit" name="action" value="send" class="btn btn-send">发送</button>
-        </form>
-    </div>
+            <div class="card">
+                <h3>在线玩家：{{ player_text }}</h3>
+            </div>
 
-    <!-- 实时日志 -->
-    <div class="card">
-        <h3>实时服务器日志</h3>
-        <div id="logBox" class="log-box">{{ log_text }}</div>
+            <div class="card">
+                <h3>发送指令</h3>
+                <form method="post" style="display: flex; gap: 8px; align-items: center;">
+                    <input type="text" name="cmd" placeholder="输入指令，如 say hello" autocomplete="off">
+                    <button type="submit" name="action" value="send" class="btn btn-blue">发送</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>服务器日志</h3>
+                <div class="log-box" id="log">{{ log_text }}</div>
+            </div>
+        </div>
     </div>
 
     <script>
-        // 每 2 秒自动刷新日志
+        // 只刷新日志，不刷新整个页面！配置框不会被清空了
         function refreshLog() {
-            fetch('/')
-                .then(response => response.text())
-                .then(html => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
-                    const newLog = doc.getElementById('logBox').innerHTML;
-                    const logBox = document.getElementById('logBox');
-                    logBox.innerHTML = newLog;
-                    // 自动滚动到底部
-                    logBox.scrollTop = logBox.scrollHeight;
+            fetch("/log")
+               .then(res => res.text())
+               .then(text => {
+                    document.getElementById("log").innerText = text;
                 });
         }
         setInterval(refreshLog, 2000);
